@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorveteria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorveteria</h1>
+        <form id="sorveteria-form">
+            <div class="item">
+                <label for="acai">Açaí (R$8,00):</label>
+                <input type="number" id="acai" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="casquinha">Sorvete Casquinha (R$2,00):</label>
+                <input type="number" id="casquinha" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="pote">Sorvete de Pote (R$5,00):</label>
+                <input type="number" id="pote" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="milkshake">Milk Shake (R$7,00):</label>
+                <input type="number" id="milkshake" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="cupcake">Cupcake (R$1,50):</label>
+                <input type="number" id="cupcake" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="picole">Picolé (R$1,50):</label>
+                <input type="number" id="picole" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="brownie">Brownie (R$1,50):</label>
+                <input type="number" id="brownie" value="0" min="0">
+            </div>
+            <div class="item">
+                <label for="refresco">Refresco (R$1,00):</label>
+                <input type="number" id="refresco" value="0" min="0">
+            </div>
+            <button type="button" onclick="calcularTotal()">Calcular Total</button>
+        </form>
+        <div class="result">
+            <p>Total: R$<span id="total">0.00</span></p>
+        </div>
+        <div class="troco">
+            <label for="valorPago">Valor Pago:</label>
+            <input type="number" id="valorPago" value="0" min="0">
+            <button type="button" onclick="calcularTroco()">Calcular Troco</button>
+            <p>Troco: R$<span id="troco">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
